@@ -76,6 +76,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                     val intent = Intent(this@MainActivity,UserActivity::class.java)
                     prefManager.setLoggin(true)
                     prefManager.setLogin("user",token,id!!)
+                    prefManager.setName(user, email)
                     startActivity(intent)
                     Toast.makeText(this@MainActivity, "Selamat datang User", Toast.LENGTH_SHORT).show()
                     finish()
