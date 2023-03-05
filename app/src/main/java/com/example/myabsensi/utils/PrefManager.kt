@@ -49,6 +49,14 @@ class PrefManager(var context: Context) {
         return pref?.getString("email", "")
     }
 
+    fun setDashboard(user: String?, positions: String?, Holiday: String?) {
+        editor?.putString("user", user)
+        editor?.putString("positions", positions)
+        editor?.putString("Holiday", Holiday)
+        editor?.commit()
+    }
+
+
     fun clear() {
         editor?.clear()
             ?.apply()

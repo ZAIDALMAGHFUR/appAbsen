@@ -24,6 +24,8 @@
 
             //memanggil nama dan email yang login dari shared preference
             prefManager = PrefManager(this)
+            val headerView = binding.NameUser.findViewById<TextView>(R.id.NameUser)
+            headerView.text = prefManager.getName()
 
             //membuat logout
             //menggunakan fungsi onNavigationItemSelected

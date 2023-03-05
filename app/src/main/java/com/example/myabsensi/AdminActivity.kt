@@ -72,8 +72,7 @@ class AdminActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
-    fun masege(){
+    fun masege() {
         Toast.makeText(this, "Anda Berhasil logout", Toast.LENGTH_SHORT).show()
     }
-
 }

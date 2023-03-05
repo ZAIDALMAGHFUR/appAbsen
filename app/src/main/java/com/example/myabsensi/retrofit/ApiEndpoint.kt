@@ -13,6 +13,11 @@ interface ApiEndpoint {
         @Field("password") password:String
     ):Call<LoginResponse>
 
+    @GET("DashboardController-index")
+    fun dashboard(
+        @Header("Authorization") token:String
+    ):Call<DashboardResponse>
+
     @GET("logout")
     fun logout(
         @Header("Authorization") token:String
